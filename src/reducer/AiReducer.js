@@ -39,18 +39,18 @@ function reducer(state, action) {
         ),
       };
 
-  //   case "download_image":
-  //     if (state.downloads.includes(action.payload)) {
-  //       return state;
-  //     }
-  //     return {
-  //       ...state,
-  //       downloads: [...state.downloads, action.payload],
-  //     };
+    case "download_image":
+      if (state.downloads.includes(action.payload)) {
+        return state;
+      }
+      return {
+        ...state,
+        downloads: [...state.downloads, action.payload],
+      };
 
-  //   default:
-  //     return state;
-  // }
+    default:
+      return state;
+  }
 }
 
 export { initialState, reducer };

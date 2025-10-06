@@ -23,13 +23,13 @@ function reducer(state, action) {
       images: action.payload,
     };
 
-    // case "image_loaded":
-    //   return {
-    //     ...state,
-    //     images: state.images.map((img, index) =>
-    //       index === action.payload ? { ...img, loading: false } : img
-    //     ),
-    //   };
+    case "image_loaded":
+      return {
+        ...state,
+        images: state.images.map((img, index) =>
+          index === action.payload ? { ...img, loading: false } : img
+        ),
+      };
 
     // case "image_error":
     //   return {

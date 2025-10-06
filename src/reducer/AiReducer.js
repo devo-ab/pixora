@@ -9,19 +9,19 @@ function reducer(state, action) {
     case "tab":
       return { ...state, selectedTab: action.payload };
 
-    // case "generate_image":
-    //   return {
-    //     ...state,
-    //     images: action.payload.map((url) => ({
-    //       url,
-    //       loading: true,
-    //       error: false,
-    //     })),
-    //   };
-    //     return {
-    //   ...state,
-    //   images: action.payload,
-    // };
+    case "generate_image":
+      return {
+        ...state,
+        images: action.payload.map((url) => ({
+          url,
+          loading: true,
+          error: false,
+        })),
+      };
+        return {
+      ...state,
+      images: action.payload,
+    };
 
     // case "image_loaded":
     //   return {

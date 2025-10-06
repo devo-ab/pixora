@@ -31,13 +31,13 @@ function reducer(state, action) {
         ),
       };
 
-    // case "image_error":
-    //   return {
-    //     ...state,
-    //     images: state.images.map((img, index) =>
-    //       index === action.payload ? { ...img, loading: false, error: true } : img
-    //     ),
-    //   };
+    case "image_error":
+      return {
+        ...state,
+        images: state.images.map((img, index) =>
+          index === action.payload ? { ...img, loading: false, error: true } : img
+        ),
+      };
 
   //   case "download_image":
   //     if (state.downloads.includes(action.payload)) {

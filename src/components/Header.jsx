@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/images/pixora.png";
 import { AiContext } from "../context/AiContext";
 
 export default function Header() {
